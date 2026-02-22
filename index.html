@@ -4,7 +4,54 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Velora Protocol</title>
+  <style>
+.token-box{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+  margin-top:40px;
+}
 
+.token-box div{
+  background:#111;
+  padding:20px;
+  border-radius:12px;
+  width:220px;
+  transition:0.3s;
+}
+
+.token-box div:hover{
+  transform:scale(1.05);
+  background:#1a1a1a;
+}
+
+.roadmap{
+  margin-top:40px;
+}
+
+.step{
+  background:#111;
+  padding:20px;
+  margin:15px auto;
+  width:60%;
+  border-radius:12px;
+  opacity:0;
+  transform:translateY(20px);
+  animation:fadeUp 1s forwards;
+}
+
+.step:nth-child(1){animation-delay:0.2s;}
+.step:nth-child(2){animation-delay:0.4s;}
+.step:nth-child(3){animation-delay:0.6s;}
+.step:nth-child(4){animation-delay:0.8s;}
+
+@keyframes fadeUp{
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
 <style>
 body{
   margin:0;
@@ -52,7 +99,7 @@ footer{
 <footer>
 © 2026 Velora Protocol
 </footer>
-<section id="tokenomics">
+<section> id="tokenomics">
   <h2>Tokenomics</h2>
 
   <div class="token-box">
@@ -78,15 +125,7 @@ footer{
   </div>
 </section>
 
-<section id="roadmap">
-  <h2>Roadmap</h2>
 
-  <div class="roadmap">
-    <div class="step">Q1 2026 — Protocol Design</div>
-    <div class="step">Q2 2026 — Testnet Launch</div>
-    <div class="step">Q3 2026 — Mainnet Release</div>
-    <div class="step">Q4 2026 — Ecosystem Expansion</div>
-  </div>
-</section>
-</body>
+  
+</body>  
 </html>
