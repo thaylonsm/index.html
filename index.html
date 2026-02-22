@@ -1,131 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Velora Protocol</title>
-  <style>
-.token-box{
-  display:flex;
-  justify-content:center;
-  gap:40px;
-  flex-wrap:wrap;
-  margin-top:40px;
-}
-
-.token-box div{
-  background:#111;
-  padding:20px;
-  border-radius:12px;
-  width:220px;
-  transition:0.3s;
-}
-
-.token-box div:hover{
-  transform:scale(1.05);
-  background:#1a1a1a;
-}
-
-.roadmap{
-  margin-top:40px;
-}
-
-.step{
-  background:#111;
-  padding:20px;
-  margin:15px auto;
-  width:60%;
-  border-radius:12px;
-  opacity:0;
-  transform:translateY(20px);
-  animation:fadeUp 1s forwards;
-}
-
-.step:nth-child(1){animation-delay:0.2s;}
-.step:nth-child(2){animation-delay:0.4s;}
-.step:nth-child(3){animation-delay:0.6s;}
-.step:nth-child(4){animation-delay:0.8s;}
-
-@keyframes fadeUp{
-  to{
-    opacity:1;
-    transform:translateY(0);
-  }
-}
-<style>
-body{
-  margin:0;
-  font-family:Arial, sans-serif;
-  background:#000;
-  color:#fff;
-  text-align:center;
-}
-header{
-  padding:20px;
-  border-bottom:1px solid #222;
-}
-section{
-  padding:100px 20px;
-}
-.btn{
-  padding:12px 24px;
-  background:white;
-  color:black;
-  text-decoration:none;
-  border-radius:8px;
-  font-weight:bold;
-}
-footer{
-  padding:40px;
-  border-top:1px solid #222;
-  color:#777;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velora Network</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-black text-white font-sans">
 
-<header>
-<h1>Velora</h1>
-</header>
-
-<section>
-<h2>Sustainable BFT Infrastructure</h2>
-<p>No mining. No inflation. Deterministic finality.</p>
-<br>
-<a href="#" class="btn">Explore Technology</a>
-</section>
-
-<footer>
-© 2026 Velora Protocol
-</footer>
-<section> id="tokenomics">
-  <h2>Tokenomics</h2>
-
-  <div class="token-box">
-    <div>
-      <h3>Total Supply</h3>
-      <p>100,000,000 VEL</p>
+  <!-- HERO -->
+  <section class="text-center py-24 px-6">
+    <h1 class="text-5xl font-bold mb-6">Velora Network</h1>
+    <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+      Blockchain pública, oferta fixa e sustentável.
+      100% pública. Sem inflação. Incentivo baseado em uso.
+    </p>
+    <div class="mt-8 space-x-4">
+      <a href="#whitepaper" class="bg-blue-600 px-6 py-3 rounded-xl hover:bg-blue-700">
+        Whitepaper
+      </a>
+      <a href="#tokenomics" class="border border-white px-6 py-3 rounded-xl hover:bg-white hover:text-black">
+        Tokenomics
+      </a>
     </div>
+  </section>
 
-    <div>
-      <h3>Distribution</h3>
-      <p>40% Public</p>
-      <p>30% Ecosystem</p>
-      <p>20% Development</p>
-      <p>10% Treasury</p>
+  <!-- SOBRE -->
+  <section class="py-20 px-6 bg-gray-900 text-center">
+    <h2 class="text-3xl font-bold mb-6">Sobre a Velora</h2>
+    <p class="max-w-3xl mx-auto text-gray-400">
+      A Velora Network é uma blockchain pública inspirada nos princípios de escassez digital,
+      com fornecimento fixo de 100 milhões de VEL e modelo econômico baseado exclusivamente
+      em taxas de transação distribuídas aos validadores.
+    </p>
+  </section>
+
+  <!-- TOKENOMICS -->
+  <section id="tokenomics" class="py-20 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-10">Tokenomics</h2>
+
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+      <div class="bg-gray-900 p-8 rounded-2xl">
+        <h3 class="text-xl font-semibold mb-4">Fornecimento Total</h3>
+        <p class="text-4xl font-bold">100.000.000 VEL</p>
+        <p class="text-gray-400 mt-2">Oferta fixa e imutável</p>
+      </div>
+
+      <div class="bg-gray-900 p-8 rounded-2xl">
+        <h3 class="text-xl font-semibold mb-4">Distribuição</h3>
+        <ul class="text-gray-400 space-y-2">
+          <li>✔ 100% Público</li>
+          <li>✔ Sem inflação</li>
+          <li>✔ Sem mineração</li>
+          <li>✔ Sem reserva interna</li>
+        </ul>
+      </div>
+
     </div>
+  </section>
 
-    <div>
-      <h3>Model</h3>
-      <p>No Inflation</p>
-      <p>No Mining</p>
-      <p>Sustainable Structure</p>
+  <!-- INCENTIVO AOS NÓS -->
+  <section class="py-20 px-6 bg-gray-900 text-center">
+    <h2 class="text-3xl font-bold mb-6">Incentivo aos Validadores</h2>
+    <p class="max-w-3xl mx-auto text-gray-400">
+      Cada transação realizada na rede paga uma taxa.
+      100% das taxas são distribuídas ao validador responsável pelo bloco.
+      Não há emissão de novos tokens.
+      A segurança da rede é proporcional ao seu uso.
+    </p>
+  </section>
+
+  <!-- ROADMAP -->
+  <section class="py-20 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-10">Roadmap</h2>
+
+    <div class="max-w-4xl mx-auto space-y-8 text-left">
+
+      <div class="bg-gray-900 p-6 rounded-xl">
+        <h3 class="text-xl font-semibold">Fase 1 – Fundação</h3>
+        <p class="text-gray-400">Criação do modelo econômico e whitepaper.</p>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-xl">
+        <h3 class="text-xl font-semibold">Fase 2 – Rede Inicial</h3>
+        <p class="text-gray-400">Deploy da Velora Network com consenso Proof of Authority.</p>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-xl">
+        <h3 class="text-xl font-semibold">Fase 3 – Rede Pública</h3>
+        <p class="text-gray-400">Expansão para múltiplos validadores e abertura total.</p>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-xl">
+        <h3 class="text-xl font-semibold">Fase 4 – Governança</h3>
+        <p class="text-gray-400">Implementação de propostas VEP e governança on-chain.</p>
+      </div>
+
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- WHITEPAPER -->
+  <section id="whitepaper" class="py-20 px-6 bg-gray-900 text-center">
+    <h2 class="text-3xl font-bold mb-6">Whitepaper</h2>
+    <p class="text-gray-400 mb-6">
+      Leia o Whitepaper Técnico v3.0 da Velora Network.
+    </p>
+    <a href="Velora_Technical_Whitepaper_v3.pdf" 
+       class="bg-blue-600 px-6 py-3 rounded-xl hover:bg-blue-700">
+       Baixar Whitepaper
+    </a>
+  </section>
 
-  
-</body>  
+  <!-- FOOTER -->
+  <footer class="text-center py-10 text-gray-500 text-sm">
+    © 2026 Velora Network – Todos os direitos reservados.
+  </footer>
+
+</body>
 </html>
